@@ -6,11 +6,6 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'windows-latest'
-
-
-
 steps:
 - script: echo Hello, world
   displayName: 'Hello world' 
