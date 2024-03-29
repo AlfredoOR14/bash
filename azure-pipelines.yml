@@ -1,11 +1,13 @@
-# Universal Windows Platform
-# Build a Universal Windows Platform project using Visual Studio.
-# Add steps that test and distribute an app, save build artifacts, and more:
-# https://aka.ms/yaml
+# Definir el pool de agentes donde se ejecutará el pipeline
+pool:
+  vmImage: 'ubuntu-latest'
 
-trigger:
-- master
-
-steps:
-- script: echo Hello, world
-  displayName: 'Hello world' 
+# Definir los stages del pipeline
+stages:
+- stage: HolaMundo
+  displayName: 'Hola Mundo'
+  jobs:
+  - job: EjecutarScript
+    displayName: 'Ejecutar Script de Hola Mundo'
+    steps:
+    - script: echo "Hola mundo"
