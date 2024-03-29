@@ -13,4 +13,4 @@ pool:
 
 steps:
 - script: echo Hello, world
-  displayname: 'Hello world' 
+  displayName: 'Hello world' 
