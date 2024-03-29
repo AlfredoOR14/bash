@@ -1,6 +1,6 @@
 # Definir el pool de agentes donde se ejecutará el pipeline
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
 
 # Definir los stages del pipeline
 stages:
